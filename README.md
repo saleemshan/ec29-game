@@ -1,4 +1,4 @@
-# Ec99 Game — SEO-optimized Next.js single-page site
+# Ec99 Game — SEO-optimized Next.js single-page site 
 
 Single-page Next.js 14 (App Router) site engineered to outrank competing earning-app pages (988win, AR999, K8, CT999, DK999) for high-volume Pakistan keywords.
 
