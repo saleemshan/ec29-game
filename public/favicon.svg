@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#0F4B2E"/>
+      <stop offset="100%" stop-color="#031A0F"/>
+    </radialGradient>
+    <linearGradient id="g" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#FFE48A"/>
+      <stop offset="1" stop-color="#E8A41A"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="31" fill="url(#g)"/>
+  <circle cx="32" cy="32" r="27" fill="url(#bg)"/>
+  <text x="50%" y="56%" text-anchor="middle" font-family="Bebas Neue, Impact, sans-serif" font-size="22" font-weight="900" fill="url(#g)" stroke="#7A4F08" stroke-width="0.6" dominant-baseline="middle" letter-spacing="0.5">EC99</text>
+</svg>

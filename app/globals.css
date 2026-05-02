@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Bebas Neue", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: #070A1A;
+  color: #E7EAF6;
+  font-family: var(--font-body);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reduce CLS by reserving aspect ratios on media */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Focus rings for a11y */
+:focus-visible {
+  outline: 2px solid #FFC23C;
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* Custom utility: gradient gold text */
+.text-gold-gradient {
+  background: linear-gradient(120deg, #FFE48A 0%, #FFC23C 45%, #E8A41A 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.shimmer {
+  background: linear-gradient(
+    100deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.18) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2.5s linear infinite;
+}
+
+/* Scrollbar – subtle */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0B1027;
+}
+::-webkit-scrollbar-thumb {
+  background: #1A2347;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FFC23C;
+}
+
+/* Prevent layout shift from web fonts */
+.font-display {
+  font-display: swap;
+}
